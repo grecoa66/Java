@@ -2,6 +2,8 @@
 	Given an array of n integers(duplicates allowed). 
 	Print “Yes” if the collection has a set of contiguous integers,
 	else print “No”.
+	
+	https://www.geeksforgeeks.org/?p=168817
 */
 function isContiguous(arr){
 

@@ -3,6 +3,8 @@
 	Our task is to return the index of the max element if 
 	it is at least twice as much as every other number in the array. 
 	If the max element does not satisfy the condition return -1.
+
+	https://www.geeksforgeeks.org/?p=169051
 */
 
 // Brute force way
