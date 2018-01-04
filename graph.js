@@ -1,5 +1,5 @@
 /*
-	Breadth First Traversal or BFS for a Graph.
+	Graph Data Structure.
 */
 
 function Graph() {
