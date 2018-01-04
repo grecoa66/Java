@@ -1,6 +1,9 @@
 /*
 	Given a String of length N reverse the words in it. Words are separated by dots.
 
+	So I read the problem wrong on geeks for geeks so it doesn't fully match the 
+	website description, but the problem I did is acctually harder.
+
 	https://practice.geeksforgeeks.org/problems/reverse-words-in-a-given-string/0
 */
 
@@ -36,7 +39,7 @@ function reverseString(revString, revChar){
 
 
 
-var revString = 'this.is.another.test';
+var revString = '.this.is.another.test.r.';
 
 var revChar = '.';
 
