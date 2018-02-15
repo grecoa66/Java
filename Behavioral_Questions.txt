@@ -1,0 +1,27 @@
+Behavioral Questions:
+
+Tell me about a time when you took ownership of a project. Why did you do this? What was the result of you taking the challenge? What could have happened if you did not take ownership?
+	- During a semester at Georgia Tech I took a class called Database Management Systems and Design. Our final group project was to create a web app for a municipal food bank and shelter. I was the only experienced web developer on our team, so I natural took the lead. I designed and built the web stack, created the project skeleton, and taught my team how to use all the technologies used in my web stack. 
+	- I was able to architect a stack that was easy enough for all members to learn, but also designed the stack to accomplish our project goals efficiently. We finished the project and even finished the stretch goals provided by the professors.
+	- If I was not on the team, the other members would have had to learn web development from scratch and then build a stack and also figure out all sections of the project. 
+	- I also acted as the point of contact for every member on the team. I spent countless hours teaching each member how to use Angular and build a RESTFUL web API.
+
+Describe a situation in which you met a major obstacle in order to complete a project. How did you deal with it? What steps did you take?
+	- Major obstacles appear almost daily on my current project, Sales Express. There are almost 300 developers, requirements engineers, testers, UI/UX designers, and product managers on my current project. This many people spanning one application causes a lot of confusion due to lack of communication, ever-changing requirements, and mistakes.
+	- Dealing with product halting situations has become a very familiar situation for me. I have been able to figure out a few good strategies to help curb the chaos. 
+	- First I isolate the problem. What is causing the problem? What other issues are stemming from this problem?
+	- Next I figure out if I can solve the problem myself, or should I bring in someone else with greater expertise?
+	- After I understand the root cause and pull in the people necessary, I sent out a communication to the parties that may need to know there is a problem and also others that may need to help solve the problem.
+	- If I am able to fix the problem, I take care of it depending on the priority of my work versus the issue. If I am unable to fix the problem or someone else is better suited to fix the problem, I pass along all information I can to them.
+
+Tell me about a time when you had to work with a difficult person to accomplish a goal. What was the biggest challenge? How did you handle it?
+	- On my current team I have a developer who often skates by at the bare minimum. Since we work remotely and never see each other, it is hard to keep tabs on when they are working or doing something else. I do not want to do this persons work for them so I try to engage them as much as possible without being over baring or doing their work.
+	- One way I try to ensure they are keeping up with work demands is to ask them status on their work before lunch and before I leave for the day. I only ask twice a day as to not breath down their neck all day, but also ensure that they accomplish tasks within the day.
+	- One other way I ensure this person accomplishes what they need to do is ask them a lot of questions about what they are working on. I do this to make sure they are engaged and putting forth effort to figure out answers to these questions.
+	- If a situation does come up where work needs to be completed quickly, I will step in and inherit work to ensure it gets done.
+
+Describe a situation when you worked effectively under pressure. How did you feel when working under pressure? What was going on, and how did you get through it?
+	- For my current project I was asked to join a new product team, the Flexware team. This new team was going to be started a new development methodology called SAFe Agile. SAFe agile is a scaled agile framework that is designed to accommodate large project team that have multiple scrum team. This new team was the pilot program for SAFe agile for the entire tech-dev organization. We had senior VPs attending our meetings and trainings. During the beginning the project and team was under a lot of pressure because the company was spending a lot of money training my team and paying for travel.
+	- During the initial training and planning session I kept myself composed and focused on our goals. I ignored the fact that VPs were there and worked with my team to accomplish what we needed to do.
+	- I took a lot of notes from all the different trainings. I made sure to note all the systems and technologies being mentioned in conversation.
+	- I feel fine working under pressure. It takes a lot to rattle me from my normal calm demeanor. I will be one of the last people on a project to stress out about pending due dates or finishing work on time. If I know what I need to do, I will confidently work towards that goal. I really only stress when there are large levels of uncertainty and no clear path forward. 
