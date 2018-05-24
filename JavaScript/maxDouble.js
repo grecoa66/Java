@@ -6,31 +6,37 @@
 
 	https://www.geeksforgeeks.org/?p=169051
 */
-
-// Brute force way
-function maxDouble (arr){
-	var currMax = 0;
-	var maxInd = 0;
-	// find largest and index
-	for(var x = 0; x < arr.length; x++){
-		if(arr[x] > currMax){
-			currMax = arr[x];
-			maxInd = x;
-		}
-	}
-
-	var doubleExists = true;
-	for(var y = 0; y < arr.length; y++){
-		if(y !== maxInd){
-			if( (arr[y] * 2) > currMax ){
-				doubleExists = false;
+const maxDoubleWrapper = () => {
+	// Brute force way
+	const maxDouble = (arr) => {
+		let currMax = 0;
+		let maxInd = 0;
+		// find largest and index
+		for(let x = 0; x < arr.length; x++){
+			if(arr[x] > currMax){
+				currMax = arr[x];
+				maxInd = x;
 			}
 		}
+
+		let doubleExists = true;
+		for(let y = 0; y < arr.length; y++){
+			if(y !== maxInd){
+				if( (arr[y] * 2) > currMax ){
+					doubleExists = false;
+				}
+			}
+		}
+
+		return doubleExists ? currMax : -1;
 	}
 
-	return doubleExists;
-}
+	let testArr = [3, 6, 2, 1];
+	console.log('[Max Double] : Testing this array: ', testArr);
+	console.log('[Max Double] : Result: ', maxDouble(testArr));
+	let testArr_2 = [3, 5, 2, 1];
+	console.log('[Max Double] : Testing this array: ', testArr_2);
+	console.log('[Max Double] : Result: ', maxDouble(testArr_2));
+};
 
-var testArr = [3, 6, 2, 1];
-console.log('Testing this array: ', testArr);
-console.log('Result: ', maxDouble(testArr));
+maxDoubleWrapper();

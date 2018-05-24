@@ -29,13 +29,13 @@ const compressStr = () => {
 	};
 
 	const test_1 = 'aabcccccaaa';
-	console.log('test_1 : ' + test_1 + ' => ' + compress(test_1));
+	console.log('[Compress String] : test_1 : ' + test_1 + ' => ' + compress(test_1));
 
 	const test_2 = 'abc';
-	console.log('test_2 : ' + test_2 + ' => ' + compress(test_2));
+	console.log('[Compress String] : test_2 : ' + test_2 + ' => ' + compress(test_2));
 
 	const test_3 = '';
-	console.log('test_3 : ' + test_3 + ' => ' + compress(test_3));
+	console.log('[Compress String] : test_3 : ' + test_3 + ' => ' + compress(test_3));
 };
 
 compressStr();

@@ -25,60 +25,64 @@
 
 	https://practice.geeksforgeeks.org/problems/stock-buy-and-sell/0#ExpectOP
 */
+const stockAnalyzerWrapper = () => {
+	const stockAnalyzer = (days, prices) => {
+		
+		let result = [];
+		let low, high;
 
-function stockAnalyzer (days, prices){
-	
-	var result = [];
-	var low, high;
-
-	for(var x = 0; x < prices.length - 1; x++){
-		if(prices[x] <= prices[x + 1]){
-			result.push(x);
-			for(var y = x + 1; y < prices.length; y++){
-				if(prices[y] >= prices[x]){
-					if(y === prices.length - 1){
-						result.push(y);
+		for(let x = 0; x < prices.length - 1; x++){
+			if(prices[x] <= prices[x + 1]){
+				result.push(x);
+				for(let y = x + 1; y < prices.length; y++){
+					if(prices[y] >= prices[x]){
+						if(y === prices.length - 1){
+							result.push(y);
+						}else{
+							x++;
+						}
 					}else{
-						x++;
+						result.push(y - 1);
+						break;
 					}
-				}else{
-					result.push(y - 1);
-					break;
 				}
 			}
 		}
-	}
-	printResult(result);
-}
+		printResult(result);
+	};
 
-function printResult(result){
-	var outputString = '';
-	for(var x = 0; x < result.length; x += 2){
-		outputString += '(' + result[x] + ' ' + result[x + 1] + ')';
-	}
+	const printResult = (result) => {
+		let outputString = '[Stock trading] : ';
+		for(let x = 0; x < result.length; x += 2){
+			outputString += '(' + result[x] + ' ' + result[x + 1] + ')';
+		}
 
-	console.log(outputString);
-}
-
-function stockDriver(testCases, days, prices){
-
-	for(var x = 0; x < testCases; x++){
-		stockAnalyzer(days[x], prices[x]);
+		console.log(outputString);
 	}
 
-}
+	const stockDriver = (testCases, days, prices) => {
 
-// Data
-var testCases = 2;
+		for(let x = 0; x < testCases; x++){
+			stockAnalyzer(days[x], prices[x]);
+		}
 
-var days = {
-	0 : 7,
-	1 : 10
+	}
+
+	// Data
+	let testCases = 2;
+
+	let days = {
+		0 : 7,
+		1 : 10
+	};
+
+	let prices = {
+		0 : [100, 180, 260, 310, 40, 535, 20, 10],
+		1 : [23, 13, 25, 29, 33, 19, 34, 45, 65, 67]
+	};
+
+	stockDriver(testCases, days, prices);
+
 };
 
-var prices = {
-	0 : [100, 180, 260, 310, 40, 535, 20, 10],
-	1 : [23, 13, 25, 29, 33, 19, 34, 45, 65, 67]
-};
-
-stockDriver(testCases, days, prices);
+stockAnalyzerWrapper();

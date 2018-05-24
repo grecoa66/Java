@@ -6,20 +6,25 @@
 
 	https://www.geeksforgeeks.org/?p=169066
 */
+const stairCounterWrapper = () => {
+	const stairCounter = (n) => {
+		
+		if(n === 0 || n === 1){
+			return 1;
+		}else if(n === 2){
+			return 2;
+		}else{
+			return stairCounter(n - 3) +
+					stairCounter(n - 2) +
+					stairCounter(n - 1);
+		}
 
-function stairCounter(n){
-	
-	if(n === 0 || n === 1){
-		return 1;
-	}else if(n === 2){
-		return 2;
-	}else{
-		return stairCounter(n - 3) +
-				stairCounter(n - 2) +
-				stairCounter(n - 1);
-	}
+	};
 
-}
+	// run the function
+	console.log('[Stair Counter] : Number of ways for 5: ', stairCounter(5));
+	console.log('[Stair Counter] : Number of ways for 8: ', stairCounter(8));
+	console.log('[Stair Counter] : Number of ways for 15: ', stairCounter(15));
+};
 
-// run the function
-console.log('Number of ways: ', stairCounter(5));
+stairCounterWrapper();

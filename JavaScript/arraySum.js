@@ -1,17 +1,22 @@
-function arraySum(array){
-	let currSum = 0;
-	for(let x in array){
-		if(typeof array[x] === 'number'){
-			currSum += array[x];
-		}else{
-			currSum += arraySum(array[x]);
+const arraySumWrapper = () => {
+	const arraySum = (array) => {
+		let currSum = 0;
+		for(let x in array){
+			if(typeof array[x] === 'number'){
+				currSum += array[x];
+			}else{
+				currSum += arraySum(array[x]);
+			}
 		}
-	}
 
-	return currSum;
-}
+		return currSum;
+	};
 
-//Should sum to 100
-var newArr = [10, 10, [10, 10, [10, [10]], 10, 10], 10, [10]];
+	//Should sum to 100
+	var newArr = [10, 10, [10, 10, [10, [10]], 10, 10], 10, [10]];
 
-console.log('Sum of the array: ', arraySum(newArr));
+	console.log('[Array Sum] : Sum of the array: ', arraySum(newArr));
+
+};
+
+arraySumWrapper();
