@@ -1,4 +1,4 @@
-const findLengthWrapper = ()=> {
+const findLengthWrapper = () => {
 	const findLength = (currString) => {
 		if(currString === ''){
 			return 0;
